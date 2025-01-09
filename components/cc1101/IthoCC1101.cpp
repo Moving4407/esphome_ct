@@ -447,10 +447,10 @@ void IthoCC1101::sendCommand(IthoCommand command)
 	outIthoPacket.command = command;
 	outIthoPacket.counter += 1;
 	
-	get message1 bytes
+	get message1 bytes;
 	createMessageStart(&outIthoPacket, &outMessage1);
 	
-	get message2 bytes
+	get message2 bytes;
 	switch (command)
 	{
 		case IthoJoin:
